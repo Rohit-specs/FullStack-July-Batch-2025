@@ -1,0 +1,64 @@
+from colorama import init,Fore,Back,Style
+init(autoreset=True)
+import domain
+import os
+def admin_menu():
+    menu_file_path=os.path.join("database","menu.json")
+    user_file_path=os.path.join("database","user_data.json")
+    update_menu_obj=domain.update_menu(menu_file_path)
+    update_staff_obj=domain.update_staff(user_file_path)
+    price_and_discount_management_obj=domain.update_pricing_structure()
+    while True:
+        print(Fore.RED+"\n-------------------ADMIN_MENU-------------------")
+        print(Fore.CYAN+"1. "+Style.RESET_ALL+"Menu")
+        print(Fore.CYAN+"2. "+Style.RESET_ALL+"Delete Dish")
+        print(Fore.CYAN+"3. "+Style.RESET_ALL+"Add Dish")
+        print(Fore.CYAN+"4. "+Style.RESET_ALL+"Add New Category")
+        print(Fore.CYAN+"5. "+Style.RESET_ALL+"Delete Category")
+        print(Fore.CYAN+"6. "+Style.RESET_ALL+"Update Dish Price")
+        print(Fore.CYAN+"7. "+Style.RESET_ALL+"Add Staff Member")
+        print(Fore.CYAN+"8. "+Style.RESET_ALL+"Remove Staff Member")
+        print(Fore.CYAN+"9. "+Style.RESET_ALL+"Show Staff")
+        print(Fore.CYAN+"10."+Style.RESET_ALL+"Price and Discount Management")
+        print(Fore.CYAN+"11."+Style.RESET_ALL+"Report")
+        print(Fore.CYAN+"12."+Style.RESET_ALL+"Log Out")
+        
+        try:
+            choice=int(input(Fore.YELLOW+"Enter Your Choice: "))
+        except Exception as error:
+            print(error)
+            log_obj=domain.log(error,__name__)
+            continue
+
+        try:
+            if choice==1:
+                menu_obj=domain.show_menu()
+            elif choice==2:
+                update_menu_obj.delete_dish()
+            elif choice==3:
+                update_menu_obj.add_dish()
+            elif choice==4:
+                update_menu_obj.add_category()
+            elif choice==5:
+                update_menu_obj.del_category()
+            elif choice==6:
+                update_menu_obj.update_price()
+            elif choice==7:
+                update_staff_obj.add_staff()
+            elif choice==8:
+                update_staff_obj.remove_staff()
+            elif choice==9:
+                update_staff_obj.staff_details()
+            elif choice==10:
+                price_and_discount_management_obj.update_price_menu()
+            elif choice==11:
+                domain.report_menu()
+            elif choice==12:
+                print(Fore.RED+"Exiting Admin Menu...")
+                break
+            else:
+                print(Fore.RED+f"{choice} is not a valid option")
+        except Exception as error:
+            print(error)
+            log_obj=domain.log(error,__name__)
+            continue

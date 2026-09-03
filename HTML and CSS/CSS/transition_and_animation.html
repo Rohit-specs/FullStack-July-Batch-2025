@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform and Animation</title>
+    <style>
+        .box{
+            background-color: tomato;
+            width: 111px;
+            aspect-ratio: 1/1;
+            border: 2px solid rgb(44, 44, 44);
+        }
+        .transition{
+            transform: translate(-100px,50px);
+        }
+        .rotate{
+            transform: rotate(45deg);
+            /* transform: rotateX(100deg);
+            transform: rotateY(100deg); */
+        }
+        .skew{
+            transform: skew(20deg);
+        }
+        .scale{
+            transform: scale(.8);
+        }
+        .scale-translate{
+            transform: translate(50px) scale(1.2);
+        }
+        .origin-top-left{
+            transform-origin: bottom right ;
+            transition: 2s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transform and Animation</h1>
+    </header>
+    <main>
+        <h2>Transform</h2>
+        <h3>Translate</h3>
+        <div class="box transition"></div>
+        <h3>Rotate</h3>
+        <div class="box rotate"></div>
+        <h3>Skew</h3>
+        <div class="box skew"></div> 
+        <h3>Scale</h3>
+        <div class="box scale"></div> 
+        <h3>Composite</h3>
+        <div class="box scale-translate"></div> 
+        <h3>Transform origin</h3>
+        <div class="box rotate origin-top-left"></div> 
+
+    </main>
+</body>
+</html>

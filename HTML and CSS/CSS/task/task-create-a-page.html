@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling a page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+      /* @font-face {
+        font-family: 'Roboto';
+        src: url('../roboto/Roboto-VariableFont_wdth\,wght.ttf');
+ 
+      } */
+       
+
+      .container {
+        padding: 50px;
+        background-color: rgb(243, 241, 238);
+      }
+
+      .content {
+        text-align: center;
+        width: 400px;
+        margin: auto;
+      }
+
+      body .container_heading {
+        background-image: linear-gradient(
+            to left,
+            rgba(80, 0, 230, 0.85),
+            rgba(25, 25, 233, 0.85)
+          ),
+          url(images/evie_default_bg.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+      }
+      img {
+        width: 180px;
+        height: auto;
+        padding-block: 40px;
+      }
+      a {
+        padding: 12px 20px;
+        background-color: #0b9e24;
+        color: azure;
+        border-radius: 20px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .get_started {
+        background-image: linear-gradient(
+          to right,
+          rgba(10, 10, 207, 0.788),
+          rgba(111, 0, 255, 0.6)
+        );
+        height: 200px;
+      }
+      .get_started,.container_heading{
+        color: azure;
+      }
+      h1{
+        padding-block: 10px;
+      }
+      .container_heading .content{
+        width: 650px;
+        margin-top: 250px;
+      }
+      .bg-white{
+        background-color: white;
+      }
+      h1,h3,h2{
+        /* font-family: 'Roboto',sans-serif; */
+        font-family: 'Lora',sans-serif;
+        font-weight: 500;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <section class="container container_heading">
+      <div class="hero">
+        <div class="content">
+          <h1>A production-ready theme for your projects</h1>
+          <p>
+            Evie is an MIT licensed template bundled with a minimal style guide
+            to build websites faster. It is extemely lightweight, customizable
+            and works perfectly on modern browsers.
+          </p>
+          <a href="#">Download</a>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="content">
+        <div class="heading">
+          <h2>Who can use Evie?</h2>
+        </div>
+        <p>
+          Here's who we can think of, but surely creative people will surprise
+          us.
+        </p>
+
+        <img src=".\images\undraw_designer.svg" alt="" />
+
+        <h3>Programmer</h3>
+        <p>
+          A landing page for your open source projects. Present your solution,
+          easily create docs.
+        </p>
+        <img src="images/undraw_responsive.svg" alt="" />
+      <h3>Designers</h3><p>
+          A website for your own freebies. Let the world download and use your
+          artwork
+        </p>
+
+        <img src="images/undraw_creation.svg" alt="" />
+
+        <h3>Makers</h3>
+        <p>
+          A great starting point for your web application. Focus on your idea
+          and execution
+        </p>
+        </div>
+        
+      </div>
+
+    </section>
+
+    <section class="container bg-white">
+      <div class="content">
+        <img src="images/undraw_browser.svg" alt="" />
+        <div class="heading">
+          <h3>Natural styling with almost nothing to learn</h3>
+        </div>
+        <p>
+          Evie brings you the pages you'll need and the structure to create your
+          own, without a learning curve. It is minimal and mostly styles plain
+          elements. There are only a few classes you'll need to know but nothing
+          to disrupt your preferred coding style
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="content">
+        <img src="images/undraw_frameworks.svg" alt="" />
+        <div class="heading">
+          <h3>Framework agnostic. Your front-end setup, your choice.</h3>
+        </div>
+        <p>
+          Evie has zero dependencies and uses vanilla JavaScript for a few
+          functions with minimal footprint. You can use React, Vue, Angular,
+          jQuery or whatever you prefer
+        </p>
+      </div>
+    </section>
+    <section class="container bg-white">
+      <div class="content">
+        <img src="images/together.svg" alt="" />
+        <div class="heading">
+          <h3>Ready for production or rapid prototyping</h3>
+        </div>
+        <p>
+          Landing, authentication and a few other pages to select from, despite
+          the small size. Tested on production at unDraw with amazing speeds and
+          unopinionated on how to structure your project. We really hope you'll
+          find it awesome and useful
+        </p>
+      </div>
+    </section>
+
+    <section class="container get_started">
+      <div class="content">
+        <div class="heading">
+          <h3>Get started now</h3>
+        </div>
+        <p>Grab the production version and begin your project instantly.</p>
+        <a href="#">Download Evie</a>
+      </div>
+    </section>
+  </body>
+</html>

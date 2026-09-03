@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 Forms</title>
+</head>
+<body>
+    <header>
+        <h1>User Registration Form</h1>
+        <hr>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <div>
+                <label for="name">Full Name<span class="mandatory">*</span></label>
+                <input type="text" name="name" required pattern="^[A-Za-z][A-Za-z\s\.]{2,49}$" placeholder="ex- Rohit kumar">
+            </div>
+            <br>
+            <div>
+                <label for="username">Username<span class="mandatory">*</span></label>
+                <input type="text" name="username" pattern="^[a-zA-Z][A-Za-z0-9._]{4,14}$" required  placeholder="ex- David_007">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email<span class="mandatory">*</span></label>
+                <input type="email" required name="email" placeholder="ex- john1@gmail.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,7}$">
+            </div>
+            <br>
+            <div>
+                <label for="password">Password<span class="mandatory">*</span></label>
+                <input type="password" required name="password" placeholder="ex- Aa1$" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$">
+            </div>
+            <br>
+            <div>
+                <label for="phone number">Phone number<span class="mandatory">*</span></label>
+                <input type="number" name="phone no" required pattern="^(?:\+91[\s-]?|91[\s-]?|0)?[6-9]\d{9}$">
+            </div>
+            <br>
+            <div>
+                <label for="gender">Gender<span class="mandatory">*</span></label><br>
+                <input type="radio" name="gender" value="male" required>
+                <label>Male</label>
+                <input type="radio" name="gender" value="female" required>
+                <label>Female</label>
+                <input type="radio" name="gender" value="other" required>
+                <label>Other</label>
+            </div>
+            <br>
+            <div>
+                <label for="dob">DOB</label>
+                <input type="date" name="dob" min="1965-11-16" max="2007-11-16">
+            </div>
+            <br>
+            <div>
+                <label for="country">Country</label>
+                <select name="country" required>
+                    <option value="" selected disabled>Select Country</option>
+                    <option value="India">India</option>
+                    <option value="United kingdom">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Usa">USA</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="skills">Skills:-</label><br>
+                <input type="checkbox" name="skill" value="html" id="skill1">
+                <label for="skill1">HTML</label>
+                <input type="checkbox" name="skill" value="css" id="skill2">
+                <label for="skill2">CSS</label>
+                <input type="checkbox" name="skill" value="javascript" id="skill3">
+                <label for="skill3">JavaScript</label>
+                <input type="checkbox" name="skill" value="react" id="skill4">
+                <label for="skill4">React</label>
+                <input type="checkbox" name="skill" value="nodejs" id="skill5">
+                <label for="skill5">Node.js</label>
+            </div>
+            <br>
+            <div>
+                <label for="URL">Website URL </label>
+                <input type="url" id="URL" name="url" placeholder="Drop url here">
+            </div>
+            <br>
+            <div>
+                <label for="">Profile Picture</label>
+                <input type="file" name="image" accept=".jpg,.jpeg,.png">
+            </div>
+            <br>
+            <div>
+                <label for="">About Yourself</label>
+                <textarea name="introduction" cols="30" rows="4"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+            <br>
+        </form>
+    </main>
+    <footer><strong>NOTE: </strong>Field marked with * can't be left empty</footer>
+</body>
+</html>

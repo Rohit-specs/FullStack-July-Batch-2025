@@ -1,0 +1,35 @@
+body{
+    font-family: "Inter";
+    background-color: blanchedalmond;
+}
+section{
+    width: 350px;
+    height: auto;
+    text-align: left;
+    padding: 20px;
+    border: 3px solid rgba(128, 128, 128, 0.377);
+    border-radius: 12px;
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin:  auto;
+    margin-top: 250px;
+    background-color: blanchedalmond;
+    box-shadow: -5px 5px 10px;
+
+    
+}
+.italic{
+    font-style: italic;
+}
+.button{
+    text-align: center;
+}
+button{
+    background-color: rgb(207, 140, 15);
+    width: 350px;
+    height: 70px;
+    border: none;
+    border-radius: 8px;
+    color: aliceblue;
+    font-size: 1.5em;
+}

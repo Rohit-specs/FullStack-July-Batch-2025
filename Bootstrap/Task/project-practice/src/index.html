@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" src="./js/main.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="header-top py-2">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div class="left-panel d-flex gap-4 justify-content-around">
+            <a class="text-white" href="tel: 123456789"><i class="fa-solid fa-phone-volume"></i> +1 23456789</a>
+            <a class="text-white" href="mailto: example@gmail.com"><i class="fa-solid fa-envelope"></i>
+              example@gmail.com</a>
+          </div>
+          <div class="right-panel d-flex gap-4 text-white ">
+            <a href="#" class="icon-link"><span class="rounded-icon icon-sm text-white"><i class="fa-solid fa-user"></i>
+                Login / Register </span></a>
+            <div class="vr border-2 text-white"></div>
+            <div class="social-icons d-flex gap-2">
+              <a href="#" class="icon icon-sm btn btn-white" target="_blank"
+                aria-label="Click here to visit Our Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="icon icon-sm btn btn-white" target="_blank"
+                aria-label="Click here to visit Our X Page"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="icon icon-sm btn btn-white" target="_blank"
+                aria-label="Click here to visit Our Youtube Channel"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="icon icon-sm btn btn-white" target="_blank"
+                aria-label="Click here to visit Our Instagram Page"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom py-3">
+      <div class="container">
+        <nav class="navbar bg-white navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#" aria-label="Go to home page"><img src="./images/logo.svg"
+                alt="travelsy logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse gap-lg-4" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Host A Venue</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hotels</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+              </ul>
+              <div class="d-flex gap-3">
+                <button class="btn btn-outline-primary icon icon-lg">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <a class="btn btn-primary icon-link rounded-pill" href="#">Contact Us <i
+                    class="fa-solid fa-phone-volume"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section section-py" id="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 gy-4 gy-lg-0">
+            <div class="title mb-1">Relax and Enjoy the Vacation</div>
+            <div class="heading">
+              <h1>Choose <span class="text-primary mb-3">Travelsy</span> Book Your Hotel</h1>
+            </div>
+            <p class="hero-content mb-2">
+              Lorem ipsum dolor sit amet consectetur. Hac consequat hac arcu sed. Lectus ante ut in mattis ornare
+              commodo nisi. Tortor tincidunt fames quam fusce convallis eget pulvinar.
+            </p>
+            <div class="btn btn-primary rounded-pill icon-link  mt-3">
+              Make Reservation
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="col align-items-center gy-4 gy-lg-0">
+            <div class="row gx-2 gx-sm-3 align-items-center">
+              <div class="col-6">
+                <div class="d-flex flex-column gap-2 gap-sm-3">
+                  <img src="./images/about-img-1.jpg" class="img-fluid w-100"
+                    alt="a male and a female traveller finding location on a map">
+                  <img src="./images/about-img-2.jpg" class="img-fluid w-100"
+                    alt="Tourists enjoing hill view seating in hot air baloons">
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="./images/about-img-3.jpg" class="img-fluid w-100"
+                  alt="a girl wearing yellow dress standing on a clif looking towards an iland">
+              </div>
+              <div class="col-4 position-absolute top-50 mt-4 start-50 translate-middle">
+                <img src="./images/join-now-badge.png" class="img-fluid" alt="join now badge">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="container">
+        <form action="#" class="shadow rounded-pill row p-2 p-lg-3">
+        <div class="col g-2 g-lg-0 gx-lg-2 col-12 col-lg-3 flex-grow-1"><input type="text" placeholder="Type of venue*" class="form-control rounded-pill"></div>
+        <div class="col g-2 g-lg-0 gx-lg-2 col-12 col-lg-3 flex-grow-1"><input type="text" placeholder="Pick a Date*" class="form-control rounded-pill"></div>
+        <div class="col g-2 g-lg-0 gx-lg-2 col-12 col-lg-3 flex-grow-1"><input type="text" placeholder="Zip Code*" class="form-control rounded-pill"></div>
+        <div class="col g-2 g-lg-0 gx-lg-2 col-12 col-lg-2">
+          <button type="submit" class="btn rounded-pill btn-primary icon-link">
+            Search <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button></div></form>
+      
+      
+    </div>
+  </main>
+  <footer>
+    <section class="newsletter">
+      <div class="container ">
+        <div class="px-2 py-4 bg-primary rounded-4 row">
+          <div class="col col-12 col-lg-6">
+            <span class="h3 text-white">Subscribe for Latest Newsletter</span>
+          </div>
+          <div class="col d-flex align-self-center gap-1"><input class="form-control flex-grow-1 px-2 py-2 border-0 rounded-pill "
+              type="email" name="email" id="email" placeholder="Your Email Address">
+            <button class="btn btn-light text-primary rounded-pill" type="button">Subscribe</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+    </section>
+    <section class="footer-top footer-gradient">
+      <div class="container">
+        <div class="row gy-4 gy-lg-0  section-pb section-py section-pt">
+          <div class="col-lg-2 flex-grow-1">
+            <a href="#" aria-label="go to homepage">
+              <img width="190" src="./images/logo.svg" class="img-fluid" alt="travelsy logo">
+            </a>
+            <p class="mt-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="social-icon mt-3 pt-1 d-flex gap-2 aign-items-center">
+              <a href="#" class="icon icon-sm btn btn-primary" target="_blank"
+                aria-label="Click here to visit Our Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="icon icon-sm btn btn-primary" target="_blank"
+                aria-label="Click here to visit Our X Page"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="icon icon-sm btn btn-primary" target="_blank"
+                aria-label="Click here to visit Our Youtube Channel"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="icon icon-sm btn btn-primary" target="_blank"
+                aria-label="Click here to visit Our Instagram Page"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-1 flex-grow-1">
+            <strong class="h5 fw-medium">Quick Links</strong>
+            <nav class="footer-links mt-3 d-flex flex-column gap-2">
+              <a href="index.html">Home</a>
+              <a href="#">About</a>
+              <a href="#">Host A Venue</a>
+              <a href="#">Blog</a>
+              <a href="#">Hotel</a>
+              <a href="#">Contact Us</a>
+            </nav>
+          </div>
+          <div class="col-lg-2 flex-grow-1">
+            <strong class="h5 fw-medium">Get In Touch</strong>
+            <ul class="list-unstyled mt-3 mb-0">
+              <li>
+                <a class="icon-link gap-2" href="tel: 1 12345 67890">
+                  <span class="icon icon-sm btn btn-primary flex-shrink-0">
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </span>
+                  +1 12345 67890
+                </a>
+              </li>
+              <li class="pt-2 mt-1">
+                <a class="icon-link gap-2" href="mailto: example@gmail.com">
+                  <span class="icon icon-sm btn btn-primary flex-shrink-0">
+                    <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  example@gmail.com
+                </a>
+              </li>
+              <li class="pt-2 mt-1">
+                <span class="icon-link align-items-start gap-2">
+                  <span class="icon icon-sm bg-primary text-white flex-shrink-0">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                  <address>1014 N Main St, Miami, Oklahoma, 74354, United States</address>
+                </span>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-lg-3 flex-grow-1">
+            <strong class="h5 fw-medium d-block mb-3">Follow Us On @instagram</strong>
+            <div class="row row-cols-3 g-2">
+              <div class="col">
+                <a href="#" target="_blank" aria-label="View this post on Instagram">
+                  <img src="./images/social-post-1.jpg" class="img-fluid w-100" alt="post on instagram">
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" target="_blank" aria-label="View this post on Instagram">
+                  <img src="./images/social-post-2.jpg" class="img-fluid w-100" alt="post on instagram">
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" target="_blank" aria-label="View this post on Instagram">
+                  <img src="./images/social-post-3.jpg" class="img-fluid w-100" alt="post on instagram">
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" target="_blank" aria-label="View this post on Instagram">
+                  <img src="./images/social-post-4.jpg" class="img-fluid w-100" alt="post on instagram">
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" target="_blank" aria-label="View this post on Instagram">
+                  <img src="./images/social-post-5.jpg" class="img-fluid w-100" alt="post on instagram">
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" target="_blank" aria-label="View this post on Instagram">
+                  <img src="./images/social-post-6.jpg" class="img-fluid w-100" alt="post on instagram">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-bottom bg-primary">
+      <div class="container">
+        <div class="text-center text-white-50  py-2">
+          &COPY; 2023 All right reserved
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic of image styling</title>
+    <style>
+        .img_responsive{
+            max-width: 550px;
+            height: auto;
+        }
+        .img_circle{
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
+        .img_responsive cover{
+            object-fit: cover;
+        }
+        .contain{
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <header><h1><u>Image Styling</u>
+    </h1></header>
+    <main>
+        <h2>Responsive images</h2>
+
+        <img class="img_responsive" src="./cat_img.jpg" alt="grey cat wearing sun glasses and red hoddie">
+
+        <img class="img_responsive img_thumbnail" src="./cat_img.jpg" alt="grey cat wearing sun glasses and red hoddie">
+
+        <img class="img_responsive img_circle" src="./cat_img.jpg" alt="grey cat wearing sun glasses and red hoddie">
+
+ 
+        <img class="img_responsive cover" src="./cat_img.jpg" alt="grey cat wearing sun glasses and red hoddie">
+        
+        <img class="img_responsive contain" src="./cat_img.jpg" alt="grey cat wearing sun glasses and red hoddie">
+        
+        <img class="img_responsive rounded" src="./cat_img.jpg" alt="grey cat wearing sun glasses and red hoddie">
+        
+    </main>
+    
+</body>
+</html>d

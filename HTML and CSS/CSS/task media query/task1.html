@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <style>
+      :root{
+            --color:rgb(0, 102, 255);
+            --padding:20px;
+            --border_radius:12px;
+            --border:2px solid rgba(117, 117, 117, 0.596);
+            --gap:15px;
+            --column: 3;
+            --background_color : none;
+            --card_background : none;
+            --text_color: none;
+          }
+          .dashboard{
+            display: grid;
+            max-width: 1000px;
+            margin: auto;
+            padding: var(--padding);
+            border: var(--border);
+            border-radius: var(--border_radius);
+            gap: var(--gap);
+            background-color: var(--background_color);
+      
+          }
+          .title{
+            text-align: center;
+            color: var(--text_color)
+          }
+          .cards{
+            display: grid;
+            grid-template-columns:repeat(var(--column),1fr) ;
+            gap: var(--gap);
+            padding: var(--padding);
+            /* background-color: var(--background_color); */
+          }
+          .card{
+            color: var(--text_color);
+            background-color: var(--card_background);
+
+            padding: var(--padding);
+            border: var(--border);
+            border-radius: var(--border_radius);
+            box-shadow: 0px 3px 4px rgba(114, 113, 113, 0.685);
+            
+        }
+        .cards h2{
+            color: var(--color);
+        }
+        @media (max-width:992px){
+            :root{
+                --padding:16px;
+                --border:1.5px solid rgba(117, 117, 117, 0.596);
+                --gap:12px;
+                --column:2;
+              }
+              .cards .card:nth-child(3){
+              grid-column: 1 / -1;
+              
+            }}
+            @media (max-width:576px){
+              :root{
+                --border:1px solid rgba(117, 117, 117, 0.596) ;
+                --padding:12px;
+                --gap:10px;
+                --column:1;
+              }
+          
+        }
+        /* .dark_bg{
+            --background_color : rgba(46, 46, 46, 0.822);
+            --card_background : rgba(14, 13, 13, 0.822);
+            --text_color: rgb(255, 255, 255);
+        } */
+        
+
+    </style>
+  </head>
+  <body>
+    <div class="dashboard dark_bg">
+      <h1 class="title">Analytics Overview</h1>
+      <div class="cards">
+        <div class="card">
+          <h2>Users</h2>
+          <p>1,240</p>
+        </div>
+        <div class="card">
+          <h2>Revenue</h2>
+          <p>$8,430</p>
+        </div>
+        <div class="card">
+          <h2>Sessions</h2>
+          <p>12,320</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.bg-tomato{
+    background-color: tomato;
+}
+.box{
+    width: 50%;
+    height: 200px;
+}
+
+span.box{
+    display: min-content;
+}
+
+.min-content{
+    width: min-content;
+}
+.max-content{
+    width: max-content;
+}
+.fit-content{
+    width: fit-content;
+}
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styling Images</title>
+    <style>
+        /* Body spacing */
+        body {
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        /* Container box for each demo */
+        .box {
+            border: 1px solid #000;
+            padding: 15px;
+            width: 280px;
+            margin-bottom: 25px;
+        }
+
+        /* Code box styling */
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-line;
+        }
+
+        /* Rounded image */
+        .rounded {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Thumbnail image */
+        .thumb {
+            width: 150px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Responsive image */
+        .responsive {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Object-fit: cover */
+        .cover {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Object-fit: contain */
+        .contain {
+            width: 200px;
+            height: 150px;
+            object-fit: contain;
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Styling Images</h1>
+
+<!-- Rounded Images Section -->
+<div class="box">
+    <h2>Rounded Images</h2>
+    <p>Syntax</p>
+    <div class="code-box">
+img.rounded {
+    border-radius: 50%;
+}
+    </div>
+    <p>Output</p>
+    <img src="./cat_img.jpg" class="rounded">
+</div>
+
+<!-- Thumbnail Images Section -->
+<div class="box">
+    <h2>Thumbnail Images</h2>
+    <p>Syntax</p>
+    <div class="code-box">
+img.thumb {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+    </div>
+    <p>Output</p>
+    <img src="./cat_img.jpg" class="thumb">
+</div>
+
+<!-- Responsive Images Section -->
+<div class="box">
+    <h2>Responsive Images</h2>
+    <p>Syntax</p>
+    <div class="code-box">
+img.responsive {
+    max-width: 100%;
+    height: auto;
+}
+    </div>
+    <p>Output</p>
+    <img src="./cat_img.jpg" class="responsive">
+</div>
+
+<!-- Object Fit Section -->
+<div class="box">
+    <h2>Object Fit</h2>
+    <p>Syntax</p>
+    <div class="code-box">
+img.cover {
+    object-fit: cover;
+}
+img.contain {
+    object-fit: contain;
+}
+    </div>
+    <p>Output</p>
+    <img src="./cat_img.jpg" class="cover">
+    <img src="./cat_img.jpg" class="contain">
+</div>
+
+</body>
+</html>

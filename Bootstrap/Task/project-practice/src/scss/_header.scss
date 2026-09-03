@@ -1,0 +1,11 @@
+
+header{
+    .header-top{
+        @include header-top-bg;
+        .vr{
+            @include media-breakpoint-down(lg){
+                display: none;
+            }
+        }
+    }
+}

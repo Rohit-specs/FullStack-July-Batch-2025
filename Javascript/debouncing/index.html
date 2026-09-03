@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            margin-top: 3rem;
+            max-width:600px;
+            padding: 2rem;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+        .input-group, .group{
+            margin-bottom: 1rem;
+        }
+        .input-group input{
+            width: 100%;
+            padding: .3125rem;
+        }
+        #errorFeedback{
+            color: red;
+        }
+        small{
+            display: block;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .btn{
+            text-align: center;
+        }
+        button{
+            padding: .3125rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <form action="#" id="form">
+        <h1>Form validation</h1>
+        <div class="input-group">
+            <label for="name">Name </label>
+            <input type="text" name="name" id="name">
+            <small id="errorFeedback"></small>
+        </div>
+        <div class="input-group">
+            <label for="email">Email </label>
+            <input type="text" name="email" id="email">
+            <small id="errorFeedback"></small>
+        </div>
+        <div class="input-group">
+            <label for="phone">Mobile no. </label>
+            <input type="text" name="phone" id="phone">
+            <small id="errorFeedback"></small>
+        </div>
+        <div class="input-group">
+            <label for="password">Password </label>
+            <input type="text" name="password" id="password">
+            <small id="errorFeedback"></small>
+        </div>
+        <div class="input-group">
+            <label for="confirmPassword">Confirm Password </label>
+            <input type="text" name="password" id="confirmPassword">
+            <small id="errorFeedback"></small>
+        </div>
+        <label>Skills</label>
+        <div class="check-box-group group">
+            <input type="checkbox" name="skill" value="c" id="c">
+            <label for="c">C</label>
+            <input type="checkbox" name="skill" value="python" id="python">
+            <label for="python">Python</label>
+            <input type="checkbox" name="skill" value="html" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="skill" value="css" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="skill" value="javascript" id="javascript">
+            <label for="javascript">JavaScript</label>
+            <small id="errorFeedback"></small>
+        </div>
+        <label >Gender</label>  
+        <div class="radio-group group">
+            
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="other" id="other">
+            <label for="other">Other</label>
+            <small id="errorFeedback"></small>
+        </div>
+        <div class="btn"><button type="submit">Submit</button></div>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

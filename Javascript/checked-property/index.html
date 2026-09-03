@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked property</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+        }
+        #mysubmit{
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="mycheckbox">
+    <label for="mycheckbox">i agree</label>
+    <input type="radio" name="payment-method" id="visa">
+    <label for="visa">VISA</label>
+    <input type="radio" name="payment-method" id="upi">
+    <label for="upi">UPI</label>
+    <input type="radio" name="payment-method" id="cash">
+    <label for="cash">CASH</label>
+    <button type="submit" id="mysubmit">Submit</button>
+    <p id="agreement-result"></p>
+    <p id="payment-result"></p>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

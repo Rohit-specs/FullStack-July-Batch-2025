@@ -1,0 +1,135 @@
+$primary: #FF9500;
+$border-color: #F1F1F3;
+$heading-color: #262626;
+
+$primary-80: #FFD599;
+$primary-75: #FFCA80;
+$primary-70: #FFBF66;
+$primary-90: #FFEACC;
+$primary-95: #FFF4E5;
+$primary-97: #FFF9F0;
+$primary-99: #FFFDFA;
+
+$whitebg-99: #FCFCFD;
+$whitebg-97: #F7F7F8;
+$whitebg-95: #F1F1F3;
+$whitebg-90: #E4E4E7;
+
+$grey-10: #1A1A1A;
+$grey-15: #262626;
+$grey-20: #333333;
+$grey-35: #59595A;
+$grey-40: #656567;
+$grey-60: #98989A;
+$grey-70: #B3B3B3;
+$grey-30: #4C4C4D;
+
+// COLORS
+$white: #fff;
+
+// ROOT VARIABLES
+:root {
+  // CONTAINER PADDING
+  --container-p-lg: 9.375rem;
+  --container-p: 6.25rem;
+}
+
+// LINKS
+
+$link-color: #262626;
+$link-decoration: none;
+$link-shade-percentage: 20%;
+$link-hover-color: shift-color($link-color, $link-shade-percentage);
+$link-hover-decoration: null;
+
+// FONTS
+
+$font-family-sans-serif: "Be Vietnam Pro", sans-serif;
+$font-family-monospace: "Be Vietnam Pro", sans-serif;
+
+$font-weight-base: 600;
+$line-height-base: 1.625;
+
+
+
+// HEADING
+
+$headings-font-family: "Be Vietnam Pro", sans-serif;
+$headings-line-height: 1.5;
+
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 5;
+$h2-font-size: $font-size-base * 3;
+$h3-font-size: $font-size-base * 2.375;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+// SPACERS
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .75,
+  2: $spacer * 1.125,
+  3: $spacer * 1.5,
+  4: $spacer * 1.875,
+  5: $spacer * 3.125,
+);
+
+// CONTAINER
+
+$custom-max-width: (
+  sm: 358px,
+  xl: 1280px,
+  xxl: 1597px
+);
+
+// CUSTOM BUTTON
+
+$custom-btn-padding-y: .875rem;
+$custom-btn-padding-x: 2.125rem;
+$custom-btn-bg: $primary;
+$custom-btn-color: $white;
+
+// BUTTONS
+
+$input-btn-padding-y: .875rem;
+$input-btn-padding-x: 2.125rem;
+
+// $input-btn-padding-y-sm:      .25rem ;
+// $input-btn-padding-x-sm:      .5rem ;
+// $input-btn-font-size-sm:      $font-size-sm ;
+
+// $input-btn-padding-y-lg:      .5rem ;
+// $input-btn-padding-x-lg:      1rem ;
+// $input-btn-font-size-lg:      $font-size-lg ;
+
+// NAVBAR HAMBURGER ICON
+$navbar-light-toggler-icon-bg: url("./../icons/bars.svg");
+
+// ACCORDIAN VARIABLES OVERRIDES
+$accordion-padding-y: 0rem .5rem;
+$accordion-padding-x: 0rem;
+$accordion-color: #262626;
+
+$accordion-button-padding-y: 1.25rem;
+$accordion-button-padding-x: 1.25rem;
+$accordion-button-bg: #FFF4E5;
+
+$accordion-icon-width: 3rem;
+$accordion-icon-transform: rotate(-180deg);
+
+$accordion-button-icon: url("./../icons/accordian-btn-icon.svg");
+$accordion-button-active-icon: url("./../icons/accordian-btn-icon-active.svg");
+
+
+// CAROUSEL VARIABLES OVERRIDES
+
+$carousel-control-prev-icon-bg: url("./../icons/carousel-left-arrow.svg");
+$carousel-control-next-icon-bg: url("./../icons/carousel-right-arrow.svg");
+$carousel-control-icon-width:        1rem;
+
+// FORM VARIABLE OVERRIDES
+$form-check-input-width:  1.5em;

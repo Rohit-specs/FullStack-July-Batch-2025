@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just learning Form Part 2</title>
+</head>
+<body>
+    <h1><u>Form Practice 2</u></h1>
+    <form action="#" method="post">
+        <div>
+            <label>Name: </label>
+        <input type="text" name="name" placeholder="Enter Your Name" value="Rohit">
+        </div>
+        <div>
+            <label>Age: </label>
+            <input type="number" placeholder="Enter Your Age" name="age" value="18">
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="email" name="email" placeholder="Enter your Email">
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="password" name="password" placeholder="Enter password">
+        </div>
+        <div>
+            <label>DOB:</label>
+            <input type="date" name="dob" placeholder="Enter Your Date Of Birth" value="2025-09-03">
+        </div>
+        <div>
+            <label>Gender:</label>
+            <br>
+            <input type="radio" name="gender" value="male">
+            <label>Male</label>
+            <input type="radio" name="gender" value="female">
+            <label>Female</label>
+            <input type="radio" name="gender" value="other">
+            <label>Other</label>
+        </div>
+        <!-- checked attribute -> Initially check the checkbox -->
+        <div>
+            <label for="">Skills:</label><br>
+            <input type="checkbox" value="html" name="skill">
+            <label for="">HTML</label>
+            <input type="checkbox" value="ruby" name="skill" checked>
+            <label for="">Ruby</label>
+            <input type="checkbox" value="swift" name="skill" checked>
+            <label for="">Swift</label>
+            <input type="checkbox" value="kotlin" name="skill" checked>
+            <label for="">Kotlin</label>
+
+        </div>
+
+        <div>
+            <label for="">Attach document</label>
+            <input type="file" name="Document">
+            <!-- <input type="text" name="oldfile" value=""> -->
+            <!-- url from data base goes to the value -->
+        </div>
+
+        <div>
+            <label for="">Your Can check your URL: </label>
+            <input type="url" name="url" placeholder="Drop here to check">
+        </div>
+
+        <div>
+            <label for="">Select your state</label>
+            <select name="state" id="state" >
+                <option value="" selected disabled>Select City</option>
+                <option value="uttrakhand">Uttrakhand</option>
+                <option value="himanchal pradesh">Himanchal Pradesh</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+            </select>
+        </div>
+        <div>
+            <label for="city">Select your city</label>
+            <select name="city" id="city"> 
+<!-- some attributes:- 
+selected -> to set a default value
+disabled -> disabled selection unable to select that option
+multiple -> To select multiple option -->
+                <option value="" selected disabled>Select City</option>
+                <option value="gurgaon">Gurgaon</option>
+                <option value="bageshwar">Bageshwar</option>
+                <option value="almora">Almora</option>
+                <option value="aligarh">Aligarh</option>
+                <option value="jodhpur">Jodhpur</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Any Feedback</label>
+            <textarea name="feedback" id="" cols="30" rows="4" placeholder="kuch bhi likh lo"></textarea>
+        </div>
+
+        <div>
+            <label for="">how diciplaned you are</label>
+            <input type="range" name="range">
+        </div>
+
+        <div>
+            <input type="checkbox" name="agreement checkbox" value="Checked">
+            <label>I agree,Term and Conditions (Lorem ipsum dolor sit <br>aet consectetur adipisicing elmit. Repudiandae, sapiente.)</label>
+        </div>
+        <div>
+            <!-- <label for="">Reset</label> -->
+            <input type="reset" value="clear">
+            <input type="submit" value="submit">
+        </div>
+        <!-- <div>
+            <input type="button" value="reset">
+        </div> -->
+        <button>Submit</button>
+        <button disabled="disabled">this is for nothing</button>
+        <button type="button">Test</button>
+    </form>
+</body>
+</html>

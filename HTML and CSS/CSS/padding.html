@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padding Basic in CSS</title>
+    <style>
+      .box {
+        border: 2px solid brown;
+        padding: 10px;
+        width: 400px;
+        margin-bottom: 20px;
+      }
+      .syntax_box {
+        border: 1px solid rebeccapurple;
+      }
+      .padding_1 {
+        padding: 10px;
+      }
+      .padding_2 {
+        padding: 10px, 12px;
+      }
+      .padding_3 {
+        padding: 10px, 12px, 10px;
+      }
+      .padding_3 {
+        padding: 10px, 12px, 12px, 10px;
+      }
+      .inline_padding {
+        padding-inline: 10px;
+      }
+      .block_padding {
+        padding-block: 10px;
+      }
+      .border_purple{
+        border: 2px solid purple;
+      }
+      /* img{
+        width: 80%;
+        height: auto;
+        text-align: center;
+      } */
+      .container{
+        display: flex;
+        align-items: center;
+      }
+      img{
+        width: 100%;
+        
+      }
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1><u>Padding</u></h1>
+    </header>
+    <main>
+      <div class="box">
+        <h2>One liner padding</h2>
+        
+        <div class="syntax_box">
+          <p>Syntax</p>
+          .padding_1 { padding: 10px; }<br />
+          .padding_2 { padding: 10px, 12px; }<br />
+          .padding_3 { padding: 10px, 12px, 10px; }<br />
+          .padding_3 { padding: 10px, 12px, 12px, 10px; }<br />
+        </div>
+        <ul type="none">
+          <li class="padding_1">One value : Same padding on all sides</li>
+          <li class="padding_2">
+            Two value : first value is padding of top-bottom and second value is
+            for left-right
+          </li>
+          <li class="padding_3">
+            Three value : first value is padding of top <br />second value is
+            for left-right <br />Third value decide the padding of bottom
+          </li>
+          <li class="padding_4">
+            Four value : first value is padding of top <br />second value is for
+            right <br />Third value decide the padding of bottom <br />Forth
+            value decide the padding of left side
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>in-line padding & block-line padding</h2>
+        <div class="syntax_box">
+          <p>Syntax</p>
+          .inline_padding{ padding-inline: 10px; } <br />
+          .block_padding{ padding-block: 10px; }
+        </div>
+        <ul type="none">
+          <li class="inline_padding">padding on left and right side</li>
+          <li class="block_padding">padding on top and bottom side</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Border</h2>
+        <div class="syntax_box">
+          .border_purple{
+            border: 2px solid purple;
+          }
+        </div>
+        <div class="img_container">
+          <img class="border_purple" src="cat_img.jpg" alt="cat with sun glasses">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

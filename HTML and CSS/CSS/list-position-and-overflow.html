@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Position And Overflow</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* body{
+            margin-bottom: 100px;
+        } */
+        
+        
+        .styling_list .none{
+            list-style: circle;
+            padding: 0%;
+            margin: 0;
+        }
+        .styling_list .style{
+            list-style-type: decimal; 
+            /* it behave as a ordered list */
+        }
+        .styling_list .inside{
+            list-style-position: inside;
+            /* Bullet inside text  */
+        }
+        .styling_list .outside{
+            list-style-position: outside;
+            /* Bullets are outside the text (it is default)*/
+        }
+        .emogi ul{
+            list-style-image: url("assets/emogi/image.webp");
+        }
+        
+        .pseudo_element ul{
+            list-style: none;
+            padding-left: 0px;
+            list-style-position: inside;
+        }
+
+        .pseudo_element ul li::before{
+            content: url("assets/emogi/cat_emogi.webp") ;
+        }
+        /* used to print words at first and last of element */
+        .pseudo_element ul li::after{
+            content: " hehehe!";
+        }
+        .box1{
+            position: static;
+            /* position static prevent any changes in position of element */
+            top: 40px;
+            background-color: cadetblue;
+        }
+        .box2{
+            position: relative;
+            /* it will go 45px to top from the its static(default) position
+            it may can overlap other elements
+            and its static position will be empty after it goes */
+            bottom: 45px;
+            background-color: rgb(95, 160, 117);
+        }
+        .absolute{
+            position: absolute;
+            /* it will go relative to ancistor 
+            if ancistor position is not static it position will acording to their ancistor
+            and thier position will be empty
+             */
+            right: 4px;
+            /* if we give left and right more than 20px it will create scroll bar */
+        }
+        .fixed{
+            position: fixed;
+            /* it is relative to document window 
+            it is fixed in the screen when we scroll*/
+            bottom: 30px;
+            right: 30px;  
+        }
+
+        .sticky{
+            position: sticky;
+            bottom: 50px;
+        }
+        .zindex{
+            position: relative;
+            left: 500px;
+        }
+        .tomato,.cyan,.mint{
+            width: 100px;
+            aspect-ratio: 1/1;
+            position: absolute;
+        }
+
+        .tomato{
+            background-color: tomato;
+            z-index: 1;
+            /* the low the z-index value the top the element will be */
+        }
+        .cyan{
+            background-color: cyan;
+            left: 20px;
+            top: 20px;
+            
+        }
+        .mint{
+            background-color: rgb(28, 233, 130);
+            left: 40px;
+            top: 40px;
+        }
+        .overflow{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(134, 154, 172);
+        }
+        .visible{
+            overflow: visible;
+            /* visible is the default value of overflow */
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        .auto{
+            overflow: auto;
+        }
+        .x-y{
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        
+        /* word-wrap(property) = break-world
+        breaks the word to prevent horizontal scroll bar */
+        
+        .overflow::-webkit-scrollbar{
+            width: 6px;
+            height: 6px;
+        }
+        .overflow::-webkit-scrollbar-track{
+            background-color: brown;
+            border-radius: 12px;
+        }
+        .overflow::-webkit-scrollbar-thumb{
+            background-color: rgb(241, 194, 133);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>List Position and Overflow</h1>
+    </header>
+    <main>
+        <h2>List styling</h2>
+        <section class="styling_list">
+            <ul>
+                <h3>Use of list-style property</h3>
+                <li class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis alias, at sapiente earum aliquam ullam repellat. Possimus, perspiciatis officiis.</li>
+                <h3>Use of list-style type property decimal is used to change ul to li</h3>
+                <li class="style">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis alias, at sapiente earum aliquam ullam repellat. Possimus, perspiciatis officiis.</li>
+                <h3>Use of list-style-position property inside value</h3>
+                <li class="inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis alias, at sapiente earum aliquam ullam repellat. Possimus, perspiciatis officiis.</li>
+                <h3>Use of list-style-position property outside value</h3>
+                <li class="outside">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis alias, at sapiente earum aliquam ullam repellat. Possimus, perspiciatis officiis.</li>
+                
+            </ul>
+        </section>
+        <section class="emogi">
+            <h2>Using emogi as bullets</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Deleniti perferendis ut voluptatem nobis.</li>
+                <li>Excepturi, molestias ut! Ipsa, odit?</li>
+                <li>Accusamus non provident modi perferendis!</li>
+                <li>Vero porro quibusdam quisquam itaque.</li>
+            </ul>
+        </section>
+        <section class="pseudo_element">
+            <h2>Pseudo elements</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sequi.</li>
+                <li>Unde odio dolorem ab praesentium iure sequi recusandae autem qui?</li>
+                <li>Quia amet architecto laborum exercitationem doloremque temporibus magnam dolor qui.</li>
+            </ul>
+        </section>
+        <section class="position">
+            <h2>Position Property</h2>
+            <h3>Static property</h3>
+            <div class="box1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, maxime!</p>
+            </div>
+            <h3>Relative property</h3>
+            <div class="box2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, maxime!</p>
+            </div>
+            <h3>Absolute property</h3>
+            <div class="absolute">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque perspiciatis reiciendis molestias porro velit excepturi? </p>
+            </div>
+            
+            <div class="fixed">
+                <h3 style="margin-bottom: 4px;">Position fixed</h3>
+                <img src="/css/cat_img.jpg" width="50px"
+                 alt="this is cat image">
+            </div>
+            <h3>Sticky Position</h3>
+            <div class="sticky">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad, sed non animi deleniti magni praesentium quaerat quis vitae minima.</p>
+            </div>
+            <div class="zindex">
+                <div class="tomato"></div>
+                <div class="cyan"></div>
+                <div class="mint"></div>
+            </div>
+        </section>
+        <section class="propertyoverflow">
+            <h2>Overflow Property</h2>
+            <h3>overflow visible (default value)</h3>
+            <div class="overflow visible">
+                
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil maiores sequi quasi harum. Quam est necessitatibus quia recusandae ratione distinctio debitis delectus corrupti voluptates laudantium? Distinctio magnam deleniti iure.</p>
+            </div>
+            
+            <div class="overflow hidden" style="margin-block: 120px;">
+                <h3>overflow hidden (hide the extra text which comes outside of parent)</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil maiores sequi quasi harum. Quam est necessitatibus quia recusandae ratione distinctio debitis delectus corrupti voluptates laudantium? Distinctio magnam deleniti iure.</p>
+            </div>
+            <h3>overflow scroll (create a scroll doesn't matter if scroll needed or not)</h3>
+            <div class="overflow scroll">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil maiores sequi quasi harum. Quam est necessitatibus quia recusandae ratione distinctio debitis delectus corrupti voluptates laudantium? Distinctio magnam deleniti iure.</p>
+            </div>
+            <h3>Overflow Auto(scroll asigned if their is need)</h3>
+            <div class="overflow auto" style="margin-bottom: 100px;">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quia quibusdam fugiat a odit impedit architecto recusandae, cumque rem commodi voluptate ullam tempora amet atque perferendis nemo repellat nisi consectetur?
+                </p>
+                
+            </div>
+            <h3>overflow-x and overflow-y</h3>
+            <div class="overflow x-y" style="margin-bottom: 100px;"><p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quia quibusdam fugiat a odit impedit architectorecusandae,cumque rem commodi voluptate ullam tempora amet atque perferendis nemo repellat nisi consectetur?
+                </p></div>
+
+        </section>
+    </main>
+    
+</body>
+</html>

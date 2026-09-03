@@ -1,0 +1,57 @@
+/* Type (element) selector
+    tag name like(h1,p,etc) is used 
+    style applied to all tags same tags */
+
+body{
+    background-color: black;
+}
+h1{
+    color: darkgreen;
+    text-align: center;
+}
+
+/* Universal selector [*]
+    used to select all tags of page*/
+
+*{
+    color: rgb(186, 192, 191);
+}
+
+/* ID selector [#]
+    one id value can used one time in a page*/
+
+#using_id_section{
+    color: blueviolet;
+}
+
+/* class selector [.] 
+    select all the element which have same class value*/
+
+.content{
+    color: lawngreen;
+}
+li,p{
+    color: rgb(211, 9, 43);
+}
+
+
+*[role=button]{
+    border-radius: 30%;
+}
+
+.descendant_selector span{
+    color: rgb(149, 189, 58);
+}
+
+.child_selector ul>li{
+    font-weight: bolder;
+    color: orange;
+}
+
+.adjecent_sibling_selector + p{
+    color: rgb(184, 72, 53);
+}
+
+h2~p{
+    color: darkslategrey;
+}

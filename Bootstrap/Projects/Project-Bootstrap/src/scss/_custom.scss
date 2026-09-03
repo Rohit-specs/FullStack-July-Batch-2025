@@ -1,0 +1,165 @@
+body {
+    background-color: $gray-100;
+}
+
+// CUSTOM BORDER
+.custom-border {
+    border: .0625rem solid $border-color;
+}
+
+// PRIMARY COLOR VARIANT
+.bg-primary-95 {
+    background-color: $primary-95;
+}
+
+.bg-primary-97 {
+    background-color: $primary-97;
+}
+
+.bg-primary-90 {
+    background-color: $primary-90;
+}
+
+.bg-primary-75 {
+    background-color: $primary-75;
+}
+
+.bg-primary-70 {
+    background-color: $primary-70;
+}
+
+.bg-primary-80 {
+    background-color: $primary-80;
+}
+
+.bg-primary-99 {
+    background-color: $primary-99;
+}
+
+// GREY TEXT VARIANT
+.text-col-grey-10 {
+    color: $grey-10;
+}
+
+.text-col-grey-20 {
+    color: $grey-20;
+}
+
+.text-col-grey-35 {
+    color: $grey-35;
+}
+
+.text-col-grey-40 {
+    color: $grey-40;
+}
+
+.text-col-grey-60 {
+    color: $grey-60;
+}
+
+.text-col-grey-70 {
+    color: $grey-70;
+}
+
+.text-col-grey-30 {
+    color: $grey-30;
+}
+
+// WHITE BG CLASSES
+.custom-bg-white99 {
+    background-color: $whitebg-99;
+}
+
+.custom-bg-white97 {
+    background-color: $whitebg-97;
+}
+
+
+// RESPONSIVE CONTAINER
+
+@include media-breakpoint-down(xl) {
+    :root {
+        --container-p-lg: 6.25rem;
+        --container-p: 5rem;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    :root {
+        --container-p-lg: 3.125rem;
+        --container-p: 3.125rem;
+    }
+}
+
+// CONTAINER CLASSES
+
+.container-pt {
+    padding-top: var(--container-p);
+}
+
+.container-pb {
+    padding-bottom: var(--container-p);
+}
+.container-mb {
+    margin-bottom: var(--container-p);
+}
+
+.container-ps {
+    padding-left: var(--container-p);
+}
+
+.container-pe {
+    padding-right: var(--container-p);
+}
+
+.container-pt-lg {
+    padding-top: var(--container-p-lg);
+}
+
+.container-pb-lg {
+    padding-bottom: var(--container-p-lg);
+}
+.container-mb-lg {
+    margin-bottom: var(--container-p-lg);
+}
+
+// BORDER ANIMATION
+.border-animation {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border: 0.6rem solid $white;
+    border-radius: 50%;
+    top: -18%;
+    left: -22%;
+    animation: pulse-border 3s linear infinite;
+
+    &--border-2 {
+        animation-delay: 1.5s;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 3rem;
+        height: 3rem;
+        border: .35rem solid $white;
+        top: 8%;
+        left: 5%;
+    }
+}
+
+// OVERRIDING ICON-LINK GAP
+.icon-link{
+    gap: 1rem;
+    @include media-breakpoint-down(xl) {
+        gap: .8125rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        gap: 0.625rem;
+    }
+}
+
+// NO RESIZE CLASS FOR TEXTAREA 
+.no-resize {
+  resize: none;
+}

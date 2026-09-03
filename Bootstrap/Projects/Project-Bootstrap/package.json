@@ -1,0 +1,38 @@
+{
+  "name": "bootstrap-project",
+  "version": "1.0.0",
+  "description": "Learning bootstrap with sass",
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "learn-sass",
+    "learn-bootstrap"
+  ],
+  "homepage": "https://github.com/Rohit-specs/Project-Bootstrap#readme",
+  "bugs": {
+    "url": "https://github.com/Rohit-specs/Project-Bootstrap/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rohit-specs/Project-Bootstrap.git"
+  },
+  "license": "ISC",
+  "author": "Rohit kumar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "sass": "^1.97.3"
+  },
+  "devDependencies": {
+    "vite": "^8.0.8"
+  }
+}

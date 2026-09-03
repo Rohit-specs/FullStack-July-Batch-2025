@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color and Background</title>
+    <style>
+        .box ,.bg_box{
+            border: 2px double rgb(68, 19, 180);
+            border-radius: 20px;
+            margin-block: 20px;
+            padding: 8px;
+        }
+        h1{
+            text-shadow: 2px 2px 4px rgb(200, 42, 25), -8px -4px 10px rgb(35, 174, 179);
+        }
+        h2{
+            color: rgb(58, 136, 51);
+            text-decoration: underline;
+            text-shadow: 3px 3px 6px tomato;
+        }
+        .paragraph1{
+            color: brown;
+        }
+        .paragraph2{
+            color: rgb(182, 29, 196);
+        }
+        .paragraph3{
+            color: hsl(192, 62%, 55%);
+        }
+        .paragraph4{
+            color: #afce26;
+        }
+        .paragraph5{
+            color: rgba(117, 13, 91, 0.534);
+        }
+        .syntax{
+            color: rgb(0, 133, 241);
+            display: inline;
+            padding-left: 50px;
+            font-weight: bold;
+            
+        }
+        .bg_box{
+            /* background-color: rgba(81, 53, 117, 0.418);
+             */
+            background-image: url(cat_img.jpg);
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+
+
+            /* object-fit: contain; */
+        }
+        .bg_box p{
+            color: #089727;
+        }
+        /* syntax of linear gradient */
+        /* this is like a function */
+        /* first argument is direction(dir) */
+        /* second argument is first colour */
+        /* third is second colour */
+        /* direction is bydefault top to bottom */
+
+
+        .bg_linear{
+            padding: 20px;
+            background-image: linear-gradient(45deg,rgba(255, 0, 0, 0.6),rgba(0, 0, 255, 0.6),rgba(255, 166, 0, 0.6));
+            border: 2px ;
+            margin-block: 10px;
+        }
+        .bg_radial{
+            margin-block: 10px;
+            padding: 20px;
+            background-image: radial-gradient(circle at center,rgba(255, 0, 0, 0.7),rgba(0, 0, 255, 0.7),rgba(255, 166, 0, 0.7));
+            /* border: 2px tomato;
+            border-radius: 30%; */
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><u>CSS - Color and Background</u></h1>
+    </header>
+    <main>
+        <h2>Color</h2>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="syntax">
+
+                .paragraph1{
+            color: brown;
+        }
+            </div>
+
+            <p class="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        </div>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="syntax">
+                
+                .paragraph2{
+            color: rgb(182, 29, 196);
+        }
+            </div>
+            
+            <p class="paragraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        </div>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="syntax">
+                .paragraph3{
+            color: hsl(192, 62%, 55%);
+        }
+            </div>
+
+            <p class="paragraph3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        </div>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="syntax">
+                .paragraph4{
+            color: #afce26;
+        }
+            </div>
+
+            <p class="paragraph4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        </div>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="syntax">
+                .paragraph5{
+            color: rgba(117, 13, 91, 0.534);
+        }
+            </div>
+
+            <p class="paragraph5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        </div>
+
+        <h2>Background</h2>
+        <div class="bg_box">
+            <p>Syntax:</p>
+            <div class="bg">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, nulla.</p>
+            </div>
+            <p class="paragraph6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta perspiciatis accusamus, repudiandae tempore nobis vero odit quibusdam aspernatur nemo vitae, nostrum quis iusto. Dicta, quam ipsum. Repellat quisquam suscipit voluptatum dignissimos facere libero veniam unde numquam soluta consequatur necessitatibus non ratione consectetur voluptates, mollitia ea. Omnis reiciendis eligendi ex perspiciatis.</p>
+        </div>
+        <h2>Background gradient</h2>
+        <div class="bg_linear">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatem pariatur vero quo corrupti quas deserunt blanditiis iusto, expedita dolore molestias qui accusantium debitis doloribus, incidunt aspernatur inventore eveniet libero facilis nostrum. Incidunt ducimus odit in eos quod voluptas fuga molestiae repellat? Laboriosam maxime perspiciatis ea laudantium voluptatibus! Unde, modi.</p>
+        </div>
+        <div class="bg_radial">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatem pariatur vero quo corrupti quas deserunt blanditiis iusto, expedita dolore molestias qui accusantium debitis doloribus, incidunt aspernatur inventore eveniet libero facilis nostrum. Incidunt ducimus odit in eos quod voluptas fuga molestiae repellat? Laboriosam maxime perspiciatis ea laudantium voluptatibus! Unde, modi.</p>
+        </div>
+        
+    </main>
+    
+</body>
+</html>

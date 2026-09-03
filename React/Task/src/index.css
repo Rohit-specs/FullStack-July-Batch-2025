@@ -1,0 +1,105 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0px;
+}
+:root{
+    --container-width:1140px
+}
+.container{
+    max-width: var(--container-width);
+    margin-inline: auto;
+}
+.myHeader{
+    background: linear-gradient(to right,#141e30,#243b55);
+    color: rgb(218, 209, 209);
+}
+.myHeader .container{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.myHeader a {
+    text-decoration: none;
+    color: rgb(97, 155, 209);
+}
+.myHeader ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.myHeader nav {
+    margin-inline: auto;
+}
+.myHeader a:hover{
+    color: inherit;
+} */
+
+*{
+    text-align: center;
+}
+body{
+    background-color: whitesmoke;
+}
+.avatar{
+    border-radius: 50%;
+    max-width: 40%;
+}
+.staticcard{
+    max-width: 350px;
+    margin-inline: auto;
+    padding: 18px;
+    background-color: white;
+    border-radius: 8px;
+    /* aspect-ratio: 1/1; */
+}
+.dynamiccard{
+    width: 350px;
+    padding: 18px;
+    border-radius: 8px;
+}
+.footer{
+    margin-inline: auto;
+}
+.fontsizelg{
+    font-size: 1.5rem;
+}
+.role{
+    color: rgba(44, 62, 88, 0.9);
+}
+.fw-480{
+    font-weight: 480;
+}
+.card-todo{
+    max-width: 500px;
+}
+.avatar{
+    margin-left: -10px;
+    cursor: pointer;
+    position: relative;
+}
+.avatar:hover{
+    z-index: 100;
+}
+/* .breadcrumb-item + .breadcrumb-item::before {
+    content: url(./assets/images/avatar.jpg);
+} */
+
+.carousel-btn-indicator{
+    height: 1rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #ddd7d7d3;
+}
+.nav-link{
+    color: black;
+}
+.nav-link.active{
+    border-bottom: 2px solid rgba(16, 95, 168, 0.712);
+}
+.react-hook-form *{
+    text-align: start;
+}
+.Rhf-Yup *{
+    text-align: start;
+}

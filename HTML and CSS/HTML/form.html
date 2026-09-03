@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just learning forms</title>
+</head>
+<body>
+    <header>
+        <h1>HTML FORMS</h1>
+    </header>
+    
+    <form action="#" method="post"><div>
+
+        <label for="Name">Name</label>
+        <input autofocus type="text" name="fullname" id="fullname" placeholder="Enter your name">
+    </div>
+        <div>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" placeholder="Enter your age">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter your Email">
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password"  name="password" placeholder="Enter your password">
+        </div>
+        <div>
+            <label>DOB</label>
+            <input type="Date" name="dob" placeholder="Enter your Date of Birth">
+        </div>
+        <div>
+            <label><u>Chose your gender</u></label><br>
+            <input type="radio" value="male" name="gender"><label >Male</label>
+            <input type="radio" value="female" name="gender"><label>Female</label>
+            <input type="radio" value="other" name="gender"><label>Other</label>
+        </div>
+        <div>
+            <label><u>Choose your skills</u></label><br>
+            <input type="checkbox" name="skill" value="c">
+            <label>C language</label>
+            <input type="checkbox" name="skill" value="python">
+            <label>Python</label>
+            <input type="checkbox" name="skill" value="html">
+            <label>HTML</label>
+            <input type="checkbox" name="skill" value="rust">
+            <label>Rust</label>
+
+        </div>
+        <div>
+            <label>
+                Introduce Yourself
+            </label>
+            <textarea name="introduction" rows="6" cols="30"></textarea>
+        </div>
+        <div>
+            <label>Attach Resume</label>
+            <input type="file" name="resume">
+        
+        </div>
+
+        <div>
+
+            <label for="Chose Your Option"></label>
+            <input type="checkbox" name="agrement checkbox">
+            <label>I agree,Term and conditions</label>
+        </div>
+        <div>
+            <br>
+            <!-- <input type="submit" value="Submit"> -->
+            <input type="reset" value="Clear">
+            <br>
+        </div>
+        <button>
+            Submit
+        </button>
+    </form>
+</body>
+</html>

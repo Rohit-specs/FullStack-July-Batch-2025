@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    padding: 1.5rem 1rem;
+    justify-content: space-between;
+    background: #5d6d18;
+    position: relative;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    gap: .875rem;
+}
+nav.active {
+    display: block;
+  }
+#navbar-toggler{
+    display: none;
+}
+@media (max-width:756px) {
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+    #navbar-toggler {
+        display: block;
+    }
+
+    .sign-in-btn {
+        display: none;
+    }
+    
+}

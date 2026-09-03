@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 20px;
+        }
+        .flex_box{
+            display: flex;
+            width: 100%;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        p{
+            padding: 12px;
+            background-color: rgba(128, 128, 128, 0.7);
+            border-radius: 8px;
+            color: rgb(255, 251, 245);
+            margin-block: 0px;
+            font-size: 1.5em;
+        }
+        img{
+            width: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="child one"><img src="https://mdn.github.io/shared-assets/images/examples/balloons1.jpg" alt="">
+        <div class="flex_box">
+            <p>ballon</p>
+            <p>red</p>
+            <p>sky</p>
+            <p>blue</p>
+            <p>Hot air balloon</p>
+        </div></div>
+        <div class="child two"><img src="https://mdn.github.io/shared-assets/images/examples/balloons2.jpg" alt="">
+        <div class="flex_box">
+            <p>balloons</p>
+            <p>houses</p>
+            <p>train</p>
+            <p>harborside</p>
+        </div></div>
+        <div class="child three"><img src="https://mdn.github.io/shared-assets/images/examples/balloons3.jpg" alt="">
+        <div class="flex_box">
+            <p>balloons</p>
+            <p>inflating</p>
+            <p>green</p>
+            <p>blue</p>
+        </div></div>
+        <div class="child four"><img src="https://mdn.github.io/shared-assets/images/examples/balloons4.jpg" alt="">
+        <div class="flex_box">
+            <p>balloon</p>
+            <p>sun</p>
+            <p>sky</p>
+            <p>summer</p>
+            <p>bright</p>
+            
+        </div></div>
+    </div>
+
+</body>
+</html>

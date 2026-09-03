@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            margin: 0;
+            background: linear-gradient(180deg,#4d4c4c,#0e0c0c);
+
+        }
+
+        #myCalculator {
+            max-width: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #display{
+            max-width: 100%;
+            text-align: right;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.062);
+            pointer-events: none;
+            font-size: 4rem;
+            color: rgb(189, 185, 196);
+            padding: 4px 10px;
+        }
+        #keys{
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            column-gap: 20px;
+            row-gap: 10px;
+            background: linear-gradient(145deg,#333030 ,#0e0c0c);
+            padding: 10px;
+        }
+
+        button {
+            outline: none;
+            border: none;
+            padding: 1rem 1.2rem;
+            border-radius: 40%;
+            cursor: pointer;
+            color: white;
+            background: radial-gradient(circle at 30% 30% ,#ff7e5f,#6a11cb);
+        }
+        button:where(:focus,:hover,:active){
+            background: radial-gradient(circle at 30% 30% ,hsl(12, 100%, 75%),hsl(269, 85%, 55%));
+        }
+        button:focus{
+            animation: key-animation .5s ease;
+        }
+        @keyframes key-animation {
+            0%{
+                border-radius: 40%;
+            }
+            100%{
+                border-radius: 20%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myCalculator">
+        <input readonly id="display">
+        <div id="keys">
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="appendToDisplayd('0')">0</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()">C</button>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

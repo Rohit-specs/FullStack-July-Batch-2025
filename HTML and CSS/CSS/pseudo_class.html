@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        .hover:hover{
+            color: red;
+        }
+        .focus:focus{
+            outline: rgb(104, 95, 46);
+            background-color: darkgoldenrod;
+        }
+        .active:active{
+            background-color: rgb(73, 73, 143);
+            color: beige;
+        }
+        a:visited{
+            background-color: lightgreen;
+        }
+        input:required{
+            background-color: goldenrod;
+        }
+        input:invalid{
+            background-color: tomato;
+        }
+        input:valid{
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="hover">Click Here</a>
+    <button class="focus ">Focus here</button>
+    <a href="//google.com" class="active" target="_blank">Google Active</a>
+    
+    <form action="#">
+        <input type="text" minlength="3" maxlength="8">
+        <input type="number" min="3" max="8">
+    </form>
+</body>
+</html>

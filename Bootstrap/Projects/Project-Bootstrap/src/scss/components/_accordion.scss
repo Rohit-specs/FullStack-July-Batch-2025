@@ -1,0 +1,24 @@
+// ACCORDIAN OVERRIDE CLASSES
+.accordion-button:not(.collapsed) {
+    color: #262626;
+    background-color: white;
+    box-shadow: none;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 .5rem 0 0;
+    font-size: 1.25rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: white;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+.accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
